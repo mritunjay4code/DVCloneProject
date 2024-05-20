@@ -1,0 +1,17 @@
+.page {
+  width: 82%;
+}
+.hline {
+  border-bottom: 10px solid goldenrod;
+}
+.column {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+#about-find-more-border {
+  border: 5px solid goldenrod !important;
+  width: 170px !important;
+}

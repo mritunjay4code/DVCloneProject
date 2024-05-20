@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  /* opacity: 80%; */
+  bottom: 20px;
+  right: 20px;
+  background-color: #5d504b;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#p1 {
+  opacity: 80%;
+}
+#p6 {
+  margin-left: 20px;
+}
