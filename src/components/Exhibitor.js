@@ -7,18 +7,21 @@ const Exhibitor = () => {
   return (
     <>
       <Header />
-      <div className="bg-neutral-300  p-12 ">
-        <section className="grid gap-8 md:grid-cols-2 md:items-center p-4">
+      <div className="bg-neutral-300 md:pt-[200px]">
+        <section className="lg:grid lg:gap-8 md:grid-cols-2 md:items-center p-4">
           <div class="container mt-20">
             <img
               src="https://static.wixstatic.com/media/708ac9175fde4664aafefb4480ac7c22.jpg/v1/fill/w_473,h_308,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Vineyard%203.jpg"
               alt="Nature"
-              className="h-96  w-full"
+              className="h-96  w-full lg:block relative"
             />
           </div>
-          <div class="text-block mt-20 ml-80  mr-60 p-10 h-96">
-            <h4 className="text-4xl p-5 text-[#f59e0b]"> Exhibitors Profile</h4>
-            <p className="text-justify text-2xl text-[#f59e0b]">
+          <div class="text-block lg:mt-20 ml-80 w-[200px] lg:w-auto  lg:mr-60 p-10 h-36 lg:overflow-hidden overflow-scroll lg:h-96 absolute top-[350px] md:top-[560px]">
+            <h4 className="lg:text-4xl text-[15px] p-5 text-[#f59e0b]">
+              {" "}
+              Exhibitors Profile
+            </h4>
+            <p className="text-justify lg:text-2xl text-[#f59e0b]">
               Our expo features a diverse array of exhibitors, ranging from
               estabpshed industry giants to innovative startups. Explore a
               curated selection of breweries, wineries, equipment manufacturers,
@@ -29,10 +32,10 @@ const Exhibitor = () => {
           </div>
         </section>
         <div>
-          <h1 className="text-justify text-[#5D504B] text-Left text-gray-500 dark:text-gray-400 text-3xl p-5 mt-20 mx-20">
+          <h1 className="text-justify text-[#5D504B] text-Left  dark:text-gray-400 text-3xl p-5 mt-20 mx-20">
             Exhibitor Profile
           </h1>
-          <div className="text-justify text-[#5D504B] text-Left text-gray-500 dark:text-gray-400 text-xl p-5 mt-10 mx-20">
+          <div className="text-justify text-[#5D504B] text-Left  dark:text-gray-400 text-xl p-5 mt-10 lg:mx-20">
             <p> Alcobev Brands</p>
             <p>Automation, Robotics & Control Systems</p>
             <p>Flavours / Hops / Malts / Chemicals / Extracts</p>
@@ -63,8 +66,11 @@ const Exhibitor = () => {
             alt="Nature"
             className="w-full h-96"
           />
-          <div class="text-block text-[#f59e0b]h-80 ml-20 p-20 w-full" id="p1">
-            <h4 className="p-10  text-[#ffbb09] text-center  text-gray-500 dark:text-gray-400 text-3xl  mx-2">
+          <div
+            class="text-block text-[#f59e0b] h-80 left-0 p-20 w-full"
+            id="p1"
+          >
+            <h4 className="p-10  text-[#ffbb09] text-center   dark:text-gray-400 text-3xl  mx-2">
               " Market Scenario "
             </h4>
           </div>

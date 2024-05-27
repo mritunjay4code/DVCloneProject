@@ -7,17 +7,17 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="w-full">
+      <div>
         <img
           src="https://static.wixstatic.com/media/11062b_c05e98dbb23e4505b987bdd9ad83b329~mv2.jpg/v1/fill/w_805,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_c05e98dbb23e4505b987bdd9ad83b329~mv2.jpg"
           className="w-full"
         />
       </div>
 
-      <div className="bg-neutral-300 ">
+      <div className="bg-neutral-300">
         <h1 className="text-4xl text-center italic text-">About the Event</h1>
 
-        <p className="text-justify text-gray-500 dark:text-gray-400 text-2xl p-10 mx-20">
+        <p className="text-justify text-gray-500 dark:text-gray-400 text-2xl md:p-10 mx-6 p-7 md:mx-20">
           Indulge your senses at the Brews and Wines Expo, a captivating
           celebration of craftsmanship and flavor. Embark on a journey that
           transcends borders, as we bring together the finest breweries and
@@ -33,9 +33,9 @@ const Home = () => {
           brewing and winemaking.
         </p>
 
-        <div className="page  ml-40">
-          <div class="grid  grid-cols-2 bg-[#5d504b] " id="pp">
-            <div class="text-center text-[#ffbb09] text-4xl mt-10 p-10 hline">
+        <div className=" flex flex-col lg:w-[80%] lg:ml-40">
+          <div className=" flex flex-col  bg-[#5d504b] " id="pp">
+            <div className="text-center text-[#ffbb09] text-4xl mt-10 p-10 hline">
               Highlights of Event
             </div>
 
@@ -48,7 +48,7 @@ const Home = () => {
               collaborations and partnerships.
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-96 p-10 bg-[#5d504b] italic text-2xl text-center text-[#ffbb09]">
+          <div className="flex justify-center flex-wrap gap-10 p-10 bg-[#5d504b] italic text-2xl text-center text-[#ffbb09]">
             <div>
               <h2>Hosted Buyers Program</h2>
             </div>
@@ -60,12 +60,12 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3  p-10 bg-[#5d504b] italic text-2xl text-center text-[#ffbb09]">
+          <div className="  p-10 bg-[#5d504b] italic text-2xl text-center text-[#ffbb09]">
             <div></div>
             <div>
               <button
                 type="button"
-                class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
+                className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 w-[150px] dark:focus:ring-yellow-900"
               >
                 find out more
               </button>

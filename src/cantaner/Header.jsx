@@ -1,29 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
-import images from "../images/pp.png.webp";
 import { Link } from "react-router-dom";
 import { IoIosMenu } from "react-icons/io";
-import About from "../components/About";
+import SideWin from "./SideWin";
 
 const Header = () => {
+  const [OpenSide, setOpenSide] = useState(false);
   return (
-    <nav class="fixed w-full z-20 top-0 start-0">
+    <nav class="fixed  w-full z-20 top-0 start-0">
       <div className=" bg-opacity-50">
-        <div className=" items-center  max-auto flex justify-between ">
+        <div className="items-center flex justify-between ">
           <div className="flex">
             <div>
-              <img className="object-contain h-30 w-75 ml-20" src={images} />
+              <img
+                className="w-16 md:w-36 lg:w-72 ml-4 md:ml-20"
+                src="./logo.webp"
+              />
             </div>
-            <div className="mt-10 mb-20 ml-10">
-              <div className="bg-yellow-500 items-center p-5 ">
+            <div className="mt-10 md:mb-20 ml-10">
+              <div className="bg-yellow-500 items-center p-5 hidden lg:block">
                 <h1 className="">14-16 November 2024</h1>
                 <h2>INDIA EXPO MART NOIDA</h2>
               </div>
             </div>
           </div>
 
-          <IoIosMenu className="text-white  text-3xl md:hidden " />
-          <ul className="ml-[5px] hidden md:flex  gap-5 mr-10">
+          <IoIosMenu
+            className="text-white mr-5 text-3xl md:text-[50px] lg:hidden"
+            onClick={() => setOpenSide(!OpenSide)}
+          />
+          <ul className="ml-[5px] hidden lg:flex  gap-5 mr-10">
             <li>
               <Link className="text-orange-500 text-xl font-bold" to="/">
                 Home
@@ -47,11 +53,6 @@ const Header = () => {
                 </Link>
               </li>
             </li>
-            {/* <li>
-              <Link className="text-orange-500 text-xl font-bold" to="/Visitor">
-                Visitor
-              </Link>
-            </li> */}
             <li class="dropdown">
               <Link className="text-orange-500 text-xl font-bold" to="#">
                 Visitor
@@ -70,6 +71,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
+      <SideWin OpenSide={OpenSide} />
     </nav>
   );
 };

@@ -6,18 +6,18 @@ const Visitor = () => {
   return (
     <>
       <Header />
-      <div className="bg-neutral-300  p-12 ">
-        <section className="grid gap-8 md:grid-cols-2 md:items-center p-4">
+      <div className="bg-neutral-300 md:pt-[200px] ">
+        <section className="lg:grid lg:gap-8 md:grid-cols-2 md:items-center p-4">
           <div class="container mt-20">
             <img
               src="https://static.wixstatic.com/media/708ac9175fde4664aafefb4480ac7c22.jpg/v1/fill/w_473,h_308,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Vineyard%203.jpg"
               alt="Nature"
-              className="h-96  w-full"
+              className="h-96  w-full relative"
             />
           </div>
-          <div class="text-block mt-20 ml-80  mr-60 p-10 h-96">
-            <h4 className="text-4xl p-5 text-[#f59e0b]">Visitor</h4>
-            <p className="text-justify text-2xl text-[#f59e0b]">
+          <div class="text-block lg:mt-20 ml-80 w-[200px] lg:w-auto  lg:mr-60 p-10 h-44 lg:overflow-hidden overflow-scroll lg:h-96 absolute top-[350px] md:top-[560px]">
+            <h4 className="lg:text-4xl text-xl p-5 text-[#f59e0b]">Visitor</h4>
+            <p className="text-justify lg:text-2xl text-[#f59e0b]">
               Our event attracts a diverse audience of beverage enthusiasts,
               industry professionals, and curious individuals eager to explore
               the world of brews and wines. Whether you're a brewer, winemaker,
@@ -31,7 +31,7 @@ const Visitor = () => {
             Visitor Profile
           </h1>
         </div>
-        <div className="text-justify text-Left text-gray-500 dark:text-gray-400 text-xl p-5 mt-10 mx-20">
+        <div className="text-justify text-Left text-gray-500 dark:text-gray-400 text-xl p-5 mt-10 lg:mx-20">
           <p>Brand Owners / Pubs / Clubs /Restaurants</p>
           <p>Breweries</p>
           <p>Brewers</p>
@@ -63,7 +63,10 @@ const Visitor = () => {
             alt="Nature"
             className="w-full h-96"
           />
-          <div class="text-block h-80 p-20 ml-6  " id="p1">
+          <div
+            class="text-block h-80 p-20 ml-6  overflow-scroll lg:overflow-hidden"
+            id="p1"
+          >
             <h4 className="text-4xl text-center text-[#f59e0b]">
               " Market Scenario "
             </h4>

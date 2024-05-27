@@ -7,9 +7,9 @@ const Contact = () => {
       <Header />
       <div className="bg-neutral-300 mt-300 ">
         <div className="w-full h-20"></div>
-        <div className="mt-20">
-          <h1 className="text-center text-4xl text-6xl">Contact</h1>
-          <div className="text-justify text-Left text-gray-500 dark:text-gray-400 text-xl p-5 mt-10 mx-20">
+        <div className="mt-[20rem]">
+          <h1 className="text-center text-6xl">Contact</h1>
+          <div className="text-justify flex flex-wrap gap-7 justify-center text-Left text-gray-500 dark:text-gray-400 text-xl p-5 mt-10 ">
             <p>
               <a href="#">NovaeXporium</a>
             </p>
@@ -24,7 +24,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="text-justify text-gray-500 dark:text-gray-400 text-xl p-5 mx-20">
+          <div className="text-justify text-gray-500 dark:text-gray-400 text-xl p-5 ">
             <p>
               <a href="#"> N-161, Saira Tower, GF, Gautam Nagar</a>
             </p>
@@ -35,8 +35,8 @@ const Contact = () => {
               <a href="#">New Delhi, Delhi 110049 India</a>
             </p>
           </div>
-          <div className="text-justify text-gray-500 dark:text-gray-400 text-xl p-5 mx-20">
-            <ul class="">
+          <div className="text-justify  text-gray-500 dark:text-gray-400 text-xl p-5 ">
+            <ul className="flex gap-3">
               <li class="mb-4">
                 <a href="https://www.instagram.com/" class="hover:underline">
                   Instagram
@@ -64,7 +64,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form class="p-20 mx-auto">
+        <form class="p-20 mx-auto lg:w-[50%]">
           <div class="grid md:grid-cols-2 md:gap-6 text-3xl">
             <div class="relative z-0 w-full mb-5 group">
               <input

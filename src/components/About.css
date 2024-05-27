@@ -1,6 +1,7 @@
 .container {
   position: relative;
   font-family: Arial;
+  display: flex;
 }
 
 .text-block {
